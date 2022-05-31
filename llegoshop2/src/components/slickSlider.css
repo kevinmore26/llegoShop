@@ -1,0 +1,26 @@
+.bordeCarrousel {
+  border: 2px solid #2b4898;
+  border-radius: 50px;
+  position: relative;
+ left: 10px;
+  padding:20px 10px;
+  width: 230px !important;
+
+
+}
+
+.slick-arrow .slick-next{
+    
+    color: #2b4898;
+
+}
+.slick-arrow[type=button]:not(:disabled){
+    border-radius: 50%;
+    color: #2b4898;
+    background: #2b4898;
+}
+.slick-arrow [type=button]{
+    border-radius: 50%;
+    color: #2b4898;
+    background: #2b4898;
+}
