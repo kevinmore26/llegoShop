@@ -7,7 +7,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 export default function NavTop() {
   return (
     <div>
@@ -18,7 +18,7 @@ export default function NavTop() {
             className="d-block "
             src={Logo}
             alt="First slide"
-            style={{ height: "30px",position: 'relative',right:'10px' }}
+            style={{ height: "50px",position: 'relative',right:'10px' }}
           />
           <InputGroup className="me-auto " style={{ width: "30%"}}>
             <FormControl

@@ -1,6 +1,6 @@
-import pic1 from '../assets/hamb.png'
-import pic2 from '../assets/bolsaverd.png'
-import pic3 from '../assets/carritologo.png'
+import pic1 from '../assets/Junk-Food-Transparent-Background.png'
+import pic2 from '../assets/canasta1.png'
+import pic3 from '../assets/carrito.png'
 
 export default function TipoMarket() {
   return (
