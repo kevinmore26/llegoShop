@@ -16,13 +16,13 @@ export default function SimpleSlider() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 6
+        slidesToShow: 4,
+        slidesToScroll: 4
       };
     return (
         <div style={{marginTop:'60px',with:'98%'}}>
         
-        <Slider {...settings} style={{width:'98%'}}>
+        <Slider {...settings}  style={{display:'flex',justifyContent:'center'}}>
           <div className="bordeCarrousel">
             <div>
             <h4 style={{textAlign:'center'}}>Bebidas </h4>
