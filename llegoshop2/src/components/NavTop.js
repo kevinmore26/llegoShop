@@ -12,7 +12,7 @@ import Logo from "../assets/logo1.png";
 export default function NavTop() {
   return (
     <div>
-      <Navbar
+      <Navbar fixed="top" 
         expand="lg"
         style={{
           backgroundColor: "#2B4898",
