@@ -18,7 +18,7 @@ export default function TipoMarket() {
 
 
       <div className="col-4 col-md-4 col-sm-12" style={{border:'2px solid #2B4898',borderRadius:'50px',position:'relative',backgroundColor:'rgb(81 117 216)'     }}>
-        <p style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive'}}>Mini Market</p>
+        <p style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive',color:'white'}}>Mini Market</p>
         <img
           className="d-block "
           src={pic2}
@@ -26,7 +26,7 @@ export default function TipoMarket() {
           style={{ height: "300px", position: "relative", right: "10px",margin:'0 auto',padding:'40px' }}
         />
       </div>
-      <div className="col-4 col-md-4 col-sm-12" style={{border:'2px solid #2B4898',borderRadius:'50px',position:'relative',left:'30px' ,backgroundColor:'rgb(81 117 216)'   }}>
+      <div className="col-4 col-md-4 col-sm-12" style={{border:'2px solid #2B4898',borderRadius:'50px',position:'relative',left:'30px' ,backgroundColor:'rgb(81 117 216)' ,color:'white'  }}>
         <p style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive'}}>Supermercados</p>
         <img
           className="d-block "

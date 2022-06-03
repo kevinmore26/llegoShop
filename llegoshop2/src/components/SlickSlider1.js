@@ -23,7 +23,7 @@ export default function SimpleSlider() {
         <div style={{marginTop:'60px',with:'98%'}}>
         
         <Slider {...settings}  style={{display:'flex',justifyContent:'center'}}>
-          <div className="bordeCarrousel">
+          <div className="bordeCarrousel mx-3">
             <div>
             <h4 style={{textAlign:'center'}}>Bebidas </h4>
           <img src={bebidas} style={{height:'120px',margin:'0 auto' }} alt="perrito"></img></div>
