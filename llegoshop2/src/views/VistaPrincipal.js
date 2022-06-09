@@ -3,14 +3,19 @@ import TipoMarket from "../components/TipoMarket";
 import SlickSlider from "../components/SlickSlider1";
 import { Container } from "react-bootstrap";
 import Footer from "../components/Footer";
+import SlickSlider2 from "../components/SlickSlider2";
+import SlickSlider3 from "../components/SlickSlider3";
+
 export default function VistaPrincipal() {
   return (
     <div>
       <NavTop />
       <Container style={{position:'relative',top:'80px'}}>
-          <div style={{margin:'0 85px'}}>
-        <TipoMarket />
-        <SlickSlider /></div>
+          
+        <SlickSlider3 />
+       
+
+        <SlickSlider2 />
        
       </Container>
       <Footer />

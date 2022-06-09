@@ -1,0 +1,13 @@
+@media (max-width: 1440px) { 
+    .prueba{
+        display: block !important;
+        justify-content:  left !important;
+       
+    }
+   .itemFooter{
+            margin: 30px auto   !important;
+            text-align: center;
+          
+
+   } 
+ }

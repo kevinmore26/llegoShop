@@ -3,7 +3,7 @@ import visa from "../assets/visa.png";
 import mastercard from "../assets/mastercard.png";
 import whatsApp from "../assets/whatsApp.png";
 import facebook from "../assets/FACEBOOK.png";
-
+import './Footer.css'
 export default function Footer() {
   return (
     <div>
@@ -12,10 +12,10 @@ export default function Footer() {
           position: "relative",
           top: "200px",
           backgroundColor: "#2B4898",width:'99.7vw'
-        }} className="row d-flex justify-between"
+        }} className="row   prueba"
       >
         
-          <div className="col-4 d-flex" style={{margin:'0 auto',display:'flex',justifyContent:'center'}}>
+          <div className="col-4 itemFooter  " style={{margin:'0 auto',display:'flex',justifyContent:'center'}}>
             
             <ul className="list-unstyled"  >
               <li>
@@ -103,7 +103,7 @@ export default function Footer() {
               <li></li>
             </ul>
           </div>
-          <div className="col-4" style={{margin:'0 auto',display:'flex',justifyContent:'center'}}>
+          <div className="col-4 itemFooter " style={{margin:'0 auto',display:'flex',justifyContent:'center'}}>
           
             <ul className="list-unstyled">
               <li>
@@ -182,7 +182,7 @@ export default function Footer() {
               <li></li>
             </ul>
           </div>
-          <div className="col-4" style={{margin:'0 auto',display:'flex',justifyContent:'center'}}>
+          <div className="col-4  itemFooter" style={{margin:'0 auto',display:'flex',justifyContent:'center'}}>
            
             <ul className="list-unstyled">
              
