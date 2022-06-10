@@ -11,7 +11,7 @@ export default function Footer() {
         style={{
           position: "relative",
           top: "200px",
-          backgroundColor: "#2B4898",width:'99.7vw'
+          backgroundColor: "#4f79c1",width:'99.7vw'
         }} className="row   prueba"
       >
         

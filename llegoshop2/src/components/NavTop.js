@@ -15,7 +15,7 @@ export default function NavTop() {
       <Navbar fixed="top" 
         expand="lg"
         style={{
-          backgroundColor: "#2B4898",
+          backgroundColor: "#4f79c1",
           display: "flex",
           justifyContent: "center",
         }}

@@ -1,11 +1,11 @@
 .bordeCarrousel {
-  border: 2px solid #2b4898;
+  border: 2px solid #55629D;
   border-radius: 50px;
   position: relative;
  left: 10px;
  color: white;
   padding:20px 10px;
- background-color: #5175D8;
+ background-color: #55629D;
   display: flex;
   justify-content: center;
 
@@ -22,16 +22,16 @@
 .slick-arrow .slick-next{
     display: flex;
     justify-content: center;
-    color: #2b4898;
+    color: #55629D;
 
 }
 .slick-arrow[type=button]:not(:disabled){
     border-radius: 50%;
-    color: #2b4898;
-    background: #2b4898;
+    color: #55629D;
+    background: #55629D;
 }
 .slick-arrow [type=button]{
     border-radius: 50%;
-    color: #2b4898;
-    background: #2b4898;
+    color: #55629D;
+    background: #55629D;
 }

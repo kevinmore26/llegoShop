@@ -54,8 +54,8 @@ export default class Responsive extends Component {
         <Container>
           <Slider {...settings}>
             <div >
-              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#5175D8',color:'white',margin:'20px' }}>
-                <Card.Title style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive',color:'white'}}  >Bebidas</Card.Title>
+              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white',margin:'20px' }}>
+                <Card.Title style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive',color:'white'}}  >Comida Rapida</Card.Title>
                 <Card.Img
                  
                   src={pic1}
@@ -64,8 +64,8 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#5175D8',color:'white',margin:'20px'  }}>
-                <Card.Title style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive',color:'white',margin:'0 auto'}}>Electro</Card.Title>
+              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white',margin:'20px'  }}>
+                <Card.Title style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive',color:'white',margin:'0 auto'}}>Mini Market</Card.Title>
                 <Card.Img
                     style={{ height: "300px", position: "relative", right: "10px",margin:'0 auto',padding:'40px' }}
                   src={pic2}
@@ -75,8 +75,8 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#5175D8',color:'white',margin:'20px'  }}>
-                <Card.Title style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive',color:'white'}}  >Farmacia</Card.Title>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white',margin:'20px'  }}>
+                <Card.Title style={{display:'flex',justifyContent:'center',fontSize:'30px',position:'relative',top:'20px',fontFamily:'cursive',color:'white'}}  >Supermercado</Card.Title>
                 <Card.Img
                     style={{ height: "300px", position: "relative", right: "10px",margin:'0 auto',padding:'40px' }}
                   src={pic3}
