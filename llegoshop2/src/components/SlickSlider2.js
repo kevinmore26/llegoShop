@@ -54,8 +54,8 @@ export default class Responsive extends Component {
         <Container>
           <Slider {...settings}>
             <div >
-              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
-                <Card.Title className="text-center  "  >Bebidas</Card.Title>
+              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
+                <Card.Title className="text-center">Bebidas</Card.Title>
                 <Card.Img
                  
                   src={bebidas}
@@ -64,7 +64,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+              <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Electro</Card.Title>
                 <Card.Img
                   style={{maxWidth:'120px',margin:'0 auto'  }}
@@ -75,7 +75,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Farmacia</Card.Title>
                 <Card.Img
                   style={{maxWidth:'210px',margin:'0 auto'  }}
@@ -86,7 +86,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Mascotas</Card.Title>
                 <Card.Img
                   style={{maxWidth:'120px',margin:'0 auto'  }}
@@ -97,7 +97,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Supermercado</Card.Title>
                 <Card.Img
                   style={{maxWidth:'120px',margin:'0 auto'  }}
@@ -108,7 +108,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Bebidas</Card.Title>
                 <Card.Img
                   style={{maxWidth:'120px',margin:'0 auto'  }}
@@ -119,7 +119,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Electro</Card.Title>
                 <Card.Img
                   style={{maxWidth:'120px',margin:'0 auto'  }}
@@ -130,7 +130,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none'   ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none'   ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Farmacia</Card.Title>
                 <Card.Img
                   style={{maxWidth:'210px',margin:'0 auto'  }}
@@ -141,7 +141,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">Envios</Card.Title>
                 <Card.Img
                   style={{maxWidth:'120px',margin:'0 auto'  }}
@@ -152,7 +152,7 @@ export default class Responsive extends Component {
               </Card>
             </div>
             <div>
-             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#90acdb',color:'white' }}>
+             <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white' }}>
                 <Card.Title className="text-center">M   ascotas</Card.Title>
                 <Card.Img
                   style={{maxWidth:'120px',margin:'0 auto'  }}
