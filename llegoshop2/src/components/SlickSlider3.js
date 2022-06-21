@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component ,Link} from "react";
 import Slider from "react-slick";
 import { Card, Container } from "react-bootstrap";
 import bebidas from "../assets/bebidas.png";
@@ -54,6 +54,7 @@ export default class Responsive extends Component {
         <Container>
           <Slider {...settings}>
             <div >
+             
               <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white',margin:'20px' }}>
                 <Card.Title style={{display:'flex',justifyContent:'center',fontSize:'35px',position:'relative',top:'20px',fontFamily:'cursive',color:'white'}}  >Comida Rapida</Card.Title>
                 <Card.Img
@@ -62,6 +63,7 @@ export default class Responsive extends Component {
                   style={{ height: "330px", position: "relative", right: "10px",margin:'0 auto',padding:'40px' }}
                 />
               </Card>
+         
             </div>
             <div>
               <Card style={{border:'none' ,padding:'20px',backgroundColor: '#A9B4B0',color:'white',margin:'20px'  }}>
