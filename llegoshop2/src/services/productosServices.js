@@ -18,6 +18,22 @@ const obtenerProductos = async () =>{
     }
 }
 
+
+const agregarProductos = async (nuevoProducto) =>{
+    try{
+        const headers = {
+            "Content-type":"application/json",
+        };
+
+        let {data} = await axios.post(URL,nuevoProducto,{headers});
+        return data;
+    }catch(error){
+        console.log(error)
+    }
+     
+}
+
 export{
-    obtenerProductos
+    obtenerProductos,
+    agregarProductos
 }

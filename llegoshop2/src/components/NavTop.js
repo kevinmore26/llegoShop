@@ -8,6 +8,7 @@ import {
   Form,
   Button,
 } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 import Logo from "../assets/logo1.png";
 export default function NavTop() {
   return (
@@ -65,7 +66,14 @@ export default function NavTop() {
                       Cliente
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.3">
+                     
                       Trabajador
+                    
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      <Link to="administrador">
+                      Administrador
+                      </Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">
