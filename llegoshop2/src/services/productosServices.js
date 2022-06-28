@@ -33,7 +33,38 @@ const agregarProductos = async (nuevoProducto) =>{
      
 }
 
+
+const obtenerProductoPorId = async (id) =>{ 
+    try{
+         
+        let {data} = await axios.get(`http://127.0.0.1:8000/api/listarProducto/${id}`)
+        console.log(data)
+        return data 
+    }catch{
+        
+                console.log('error')
+            //si hay errores captura ese error
+    }
+}
+
+
+const editarProducto = async (productoEditado,id) =>{ 
+    try{
+        const headers = {
+            "Content-type":"application/json",
+        };
+
+        let {data} = await axios.put(`http://127.0.0.1:8000/api/listarProducto/${id}`,productoEditado,{headers});
+        return data;
+    }catch(error){
+        console.log(error)
+    }
+}
+
+
 export{
     obtenerProductos,
-    agregarProductos
+    agregarProductos,
+    obtenerProductoPorId,
+    editarProducto
 }

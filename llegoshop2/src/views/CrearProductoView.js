@@ -1,10 +1,11 @@
 import {useState,useEffect} from 'react'
-import {agregarProductos} from '../services/productosServices'
+import {agregarProductos,obtenerProductos} from '../services/productosServices'
 import {Container, Form} from 'react-bootstrap'
 import FormProducto from '../components/FormProduct'
-
+import Swal from 'sweetalert2' 
+import { useNavigate } from 'react-router-dom'
 export default function CrearProductoView(){
-
+    const[productos,setProductos] = useState([])
     const [value,setValue] = useState({
         nombre:"",
         descripcion:"",
@@ -12,7 +13,8 @@ export default function CrearProductoView(){
         productoImagen:"",
         precio:"" 
     });
-
+    
+    const navigate = useNavigate()
     const actualizarInput = (e) =>{
         setValue({
             ...value,
@@ -20,11 +22,40 @@ export default function CrearProductoView(){
  
         })    
     };
+    const getProductos = async() =>{
+        try{
+            let productosObtenidos = await obtenerProductos() 
 
+            setProductos(productosObtenidos.productos)
+            
+        }catch{
+                console.log('error')
+        }
+    }
+
+    useEffect(()=>{
+        getProductos()
+    },[])
     const manejarSubmit = async(e) => {
+
         e.preventDefault();
         try{
             await agregarProductos(value);
+            for(let i = 0;i<productos.length;i++){
+                    
+                if(productos[i].nombre == value.nombre ){
+                    console.log('error')
+                     return
+                }
+                  
+            }
+            console.log('todo bien')
+            console.log(value)
+            console.log(productos)
+           
+            
+
+
         }catch(error){
                 console.log('errorrrrr')
         }

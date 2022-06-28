@@ -1,5 +1,5 @@
 import {Container, Form} from 'react-bootstrap'
-
+ 
 export default function FormProducto ({value,manejarSubmit,actualizarInput}){
     
     return(
@@ -69,7 +69,8 @@ export default function FormProducto ({value,manejarSubmit,actualizarInput}){
                 </div>
                 <div className='d-grid'>
                     <button className='btn btn-primary' type='submit'>
-                            GUARDAR
+                       GUARDAR 
+                            
                     </button>
 
                 </div>
