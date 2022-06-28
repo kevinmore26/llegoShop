@@ -4,6 +4,7 @@ import ProductosComidaRapida from "./views/ProductosComidaRapida"
 import CrearProductoView from "./views/CrearProductoView";
 import ListaProductosView from "./views/ListarProductosView";
 import EditarProductoView from "./views/EditarProductoView";
+import EliminarProducto from "./views/EliminarProducto";
 export default function App() {
   return (
     <BrowserRouter>
@@ -14,7 +15,8 @@ export default function App() {
           <Route exact path="/comidarapida"  element={<ProductosComidaRapida/>}  />  
           <Route exact path="/crear"  element={<CrearProductoView/>}  />  
           <Route exact path="/administrador"  element={<ListaProductosView/>}  />
-          <Route exact path="/editar/:id"  element={<EditarProductoView/>}  />  
+          <Route exact path="/editar/:id"  element={<EditarProductoView/>}  /> 
+          <Route exact path="/eliminar/:id"  element={<EliminarProducto/>}  />  
         </Routes>
       
     </BrowserRouter>

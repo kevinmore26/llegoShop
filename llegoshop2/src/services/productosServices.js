@@ -61,10 +61,24 @@ const editarProducto = async (productoEditado,id) =>{
     }
 }
 
+const eliminarProductoPorId = async (id) =>{ 
+    try{ 
+        let {data} = await axios.delete(`http://127.0.0.1:8000/api/listarProducto/${id}`)
+        console.log(data)
+        return data 
+    }catch{
+        
+                console.log('error')
+            //si hay errores captura ese error
+    }
+}
+
+
 
 export{
     obtenerProductos,
     agregarProductos,
     obtenerProductoPorId,
-    editarProducto
+    editarProducto,
+    eliminarProductoPorId
 }

@@ -19,7 +19,7 @@ export default function EditarProductoView (){
         productoImagen:"",
         precio:"" 
     });
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const getProducto = async ()=>{
         try{
             const productoObtenido = await obtenerProductoPorId(id)
@@ -42,24 +42,31 @@ export default function EditarProductoView (){
 
     const manejarSubmit = async(e) => {
         e.preventDefault();
+        try{
+            await editarProducto(value,id)
+            await Swal.fire({
+                icon:"success",
+                title:"Producto editado exitosamente",
+                showConfirmButton:true,
+                showDenyButton:true, 
+                confirmButtonText:"Ver listado",
+                denyButtonText:"Cancelar",
+            })
+
+            .then((resultado)=>{
+                if(resultado.isConfirmed){
+                    navigate('/administrador')
+                }else{
+                    navigate('/editar')
+                }
+            })
+
+
+        }catch(error){
+            console.log('errorrrrr')
+        }
         
-        await editarProducto(value,id)
-        console.log(value,id)
-        await Swal.fire({
-            icon:"Success",
-            title:"Producto editado exitosamente",
-            showConfirmButton:true,
-            showDenyButton:true,
-            timer:3000
-        })
-        .then((resultado) => {
-        if(resultado.isConfirmed){
-            
-            navigate('/administrador')
-        }else{
-            console.log('isDenied')
-        }})
-          
+        
 
     }; 
 
