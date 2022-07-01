@@ -1,10 +1,12 @@
 import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   obtenerProductos,
-  eliminarProductoPorId,obtenerProductoPorId
+  eliminarProductoPorId,
+  obtenerProductoPorId,
+  filtrarProducto,
 } from "../services/productosServices";
 export default function ListaProductosView() {
   const [productos, setProductos] = useState([]);
@@ -16,8 +18,23 @@ export default function ListaProductosView() {
     productoImagen: "",
     precio: "",
   });
-  
-  
+  const inputBusqueda = useRef();
+
+  const ejecutarBusqueda = async () => {
+    let miBusqueda = inputBusqueda.current.value;
+    //aquí arriba se almacena todo lo que escribamos
+
+    if(miBusqueda == '' ){
+      let productosObtenidos = await obtenerProductos();
+
+      setProductos(productosObtenidos.productos);
+    }else{
+      const productosFiltrados = await filtrarProducto(miBusqueda);
+      setProductos(productosFiltrados);
+    }
+    
+  };
+
   const getProductos = async () => {
     try {
       let productosObtenidos = await obtenerProductos();
@@ -31,15 +48,31 @@ export default function ListaProductosView() {
   useEffect(() => {
     getProductos();
   }, []);
-   
 
   return (
     <Container>
-      <h1>Productos Registrados</h1>
-      <Link to="/crear" className="btn btn-primary btn-lg my-2">
-        Crear Producto
-      </Link>
-
+      <h1 >Productos Registrados</h1>
+      <div className="d-flex   ">
+        <div>
+          <Link to="/crear" className="btn btn-primary btn-lg my-2 mt-3 mb-3">
+            Crear Producto
+          </Link>
+        </div>
+        <div>
+          <div className="d-flex btn-lg my-2 mt-3 mb-3">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Ingrese el nombre"
+              ref={inputBusqueda}
+            ></input>
+            <button className="btn btn-dark" onClick={ejecutarBusqueda}>
+              <i className="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+       
       <table className="table">
         <thead>
           <th>Nombre</th>
@@ -71,7 +104,7 @@ export default function ListaProductosView() {
               </td>
               <td>{prod.stockProducto}</td>
               <td>{prod.precio}</td>
-              <td>1</td>
+              <td>{prod.productoTipo}</td>
               <td>
                 <Link
                   className="btn btn-warning btn-sm"
@@ -81,14 +114,9 @@ export default function ListaProductosView() {
                 </Link>
               </td>
               <td>
-              <Link
-                  className="btn  btn-sm"
-                  to={`/eliminar/${prod.id}`}
-                >
+                <Link className="btn  btn-sm" to={`/eliminar/${prod.id}`}>
                   <i className="fas fa-trash"></i>
                 </Link>
-                
-                 
               </td>
             </tr>
           ))}

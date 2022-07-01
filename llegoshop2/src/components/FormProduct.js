@@ -67,6 +67,18 @@ export default function FormProducto ({value,manejarSubmit,actualizarInput}){
                     </input>
 
                 </div>
+                <div className='mb-3'>
+                    <label>
+                        Producto tipo :  1 - comidaRapida' | 2 - miniMarket" | 3 - supermercado"    
+                    </label>
+                    <input type="text"
+                    className='form-control'
+                    value={value.productoTipo} 
+                    onChange={(e)=>{actualizarInput(e)}}
+                    name='productoTipo'>
+                    </input>
+
+                </div>
                 <div className='d-grid'>
                     <button className='btn btn-primary' type='submit'>
                        GUARDAR 
