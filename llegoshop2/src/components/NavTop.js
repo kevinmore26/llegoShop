@@ -8,12 +8,19 @@ import {
   Form,
   Button,
 } from "react-bootstrap";
-import {Link} from 'react-router-dom'
+import pic from "../assets/casco-moto.png";
+import { Link } from "react-router-dom";
+ 
+ 
 import Logo from "../assets/logo1.png";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Footer.css";
 export default function NavTop() {
   return (
     <div>
-      <Navbar fixed="top" 
+      <Navbar
+        fixed="top"
         expand="lg"
         style={{
           backgroundColor: "#4f79c1",
@@ -44,49 +51,69 @@ export default function NavTop() {
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />
-              
-             <button className='btn btn-dark'  >
-                                    <i className="fas fa-search"></i>
-                                   
-                                    </button>
+
+              <button className="btn btn-dark">
+                <i className="fas fa-search"></i>
+              </button>
             </InputGroup>
             <Form className="d-flex">
-              <Navbar.Collapse id="basic-navbar-nav" expand="lg">
+              <Navbar.Collapse
+                id="basic-navbar-nav dropdown-button-dark-example1"
+                expand="lg"
+              >
                 <Nav className="me-auto">
                   <Nav.Link href="#home" style={{ color: "white" }}>
                     Mis Pedidos
                   </Nav.Link>
 
                   <NavDropdown
-                    title="Login"
+                    title="Iniciar Sesión"
                     bg="light"
+                    id="nav-dropdown"
+                    className="prueba"
+                    menuVariant="#4F79C1"
+                    icon="account_circle_outline"
                     style={{ color: "white !important" }}
                   >
-                    <NavDropdown.Item href="#action/3.2">
+                    <NavDropdown.Item
+                      href="#action/3.2"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
                       Cliente
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">
-                     
-                      Trabajador
-                    
+                    <NavDropdown.Item
+                      href="#action/3.3"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Despachos
+                      <img src={pic} style={{ width: "25px" }} />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">
-                      <Link to="administrador">
-                      Administrador
-                      </Link>
+                    <NavDropdown.Item href="#action/3.3" id="nav-dropdown">
+                      <Link to="administrador">Administrador</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">
+                    <NavDropdown.Item href="#action/3.4" id="nav-dropdown">
                       Registrarse
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link
-                    href="#link"
-                    color="white"
-                    style={{ color: "white" }}
-                  >
-                    Link
-                  </Nav.Link>
+
+                  <Link to="/carrito" className="nav-link">
+                    
+                  </Link>
                 </Nav>
               </Navbar.Collapse>
             </Form>

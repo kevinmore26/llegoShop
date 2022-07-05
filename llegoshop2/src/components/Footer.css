@@ -1,4 +1,4 @@
-@media (max-width: 1440px) { 
+@media (max-width: 1200px) { 
     .prueba{
         display: block !important;
         justify-content:  left !important;
@@ -7,7 +7,19 @@
    .itemFooter{
             margin: 30px auto   !important;
             text-align: center;
-          
-
+       
    } 
  }
+
+#nav-dropdown{
+   color: white   !important;
+}
+.dropdown-menu { 
+    color: white !important;
+    font-weight: bold;
+    background-color: #4F79C1 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: white !important;
+}
