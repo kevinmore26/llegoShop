@@ -10,8 +10,7 @@ import {
 } from "react-bootstrap";
 import pic from "../assets/casco-moto.png";
 import { Link } from "react-router-dom";
- 
- 
+
 import Logo from "../assets/logo1.png";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,12 +28,66 @@ export default function NavTop() {
         }}
       >
         <Container style={{ margin: "0 13%" }}>
+        <NavDropdown
+                    title={
+                      <div className="pull-left">
+                        <img
+                          className="thumbnail-image"
+                          src="https://www.samueldiosdado.com/wp-content/uploads/2017/08/Men%C3%BA-hamburguesa-herramienta-practica-o-icono-inutil.png"
+                          alt="user pic"
+                          style={{width:'25px'}}
+                        />
+                      </div>
+                    }
+                    bg="light"
+                    id="nav-dropdown"
+                    className="prueba"
+                    menuVariant="#4F79C1"
+                    icon="account_circle_outline"
+                    style={{ color: "white !important" }}
+                  >
+                    <NavDropdown.Item
+                      href="#action/3.2"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Cliente
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      href="#action/3.3"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Despachos
+                      <img src={pic} style={{ width: "25px" }} />
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3" id="nav-dropdown">
+                      <Link to="administrador">Administrador</Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4" id="nav-dropdown">
+                      Registrarse
+                    </NavDropdown.Item>
+                  </NavDropdown>
           <img
             className="d-block "
             src={Logo}
             alt="First slide"
             style={{ height: "50px", position: "relative", left: "10px" }}
           />
+
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse
             id="navbarScroll"
@@ -111,9 +164,7 @@ export default function NavTop() {
                     </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Link to="/carrito" className="nav-link">
-                    
-                  </Link>
+                  <Link to="/carrito" className="nav-link"></Link>
                 </Nav>
               </Navbar.Collapse>
             </Form>
