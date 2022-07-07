@@ -19,6 +19,7 @@ export default function EditarProductoView (){
         productoImagen:"",
         precio:"" ,
         productoTipo:"",
+        productoSubTipo:"",
     });
     const navigate = useNavigate();
     const getProducto = async ()=>{

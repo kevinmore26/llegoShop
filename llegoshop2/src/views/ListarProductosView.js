@@ -76,12 +76,12 @@ export default function ListaProductosView() {
       <table className="table">
         <thead>
           <th>Nombre</th>
-          <th>Descripción</th>
-
+          <th>Descripción</th> 
           <th>ImagenReferencial</th>
           <th>Stock</th>
           <th>Precio</th>
           <th>Tipo</th>
+          <th>Restaurante</th>
           <th> </th>
           <th> </th>
         </thead>
@@ -105,6 +105,7 @@ export default function ListaProductosView() {
               <td>{prod.stockProducto}</td>
               <td>{prod.precio}</td>
               <td>{prod.productoTipo}</td>
+              <td>{prod.productoSubTipo}</td>
               <td>
                 <Link
                   className="btn btn-warning btn-sm"

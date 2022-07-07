@@ -6,7 +6,7 @@ export default function GroupProducts({ productos }) {
     console.log(productos.productos)
 
     return (
-        <div >
+        <div style={{marginTop:"80px"}}>
             <div className='container'>
                 <div className='row mt-3'>
 
@@ -21,11 +21,16 @@ export default function GroupProducts({ productos }) {
                                  
                             <div className='card-body'>
                                 <h6 className='card-title'>
-                                    {prod.descripcion}
+                                    {prod.nombre}
                                 </h6>
                                 <span className='fw-bold'>
                                     {prod.descripcion}
                                 </span>
+                                <div>
+                                    <span>
+                                        S/ {prod.precio}
+                                    </span>
+                                </div>
 
                             </div>
                            

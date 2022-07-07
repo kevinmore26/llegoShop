@@ -79,6 +79,18 @@ export default function FormProducto ({value,manejarSubmit,actualizarInput}){
                     </input>
 
                 </div>
+                <div className='mb-3'>
+                    <label>
+                        Producto SubTipo (minusculas-junto)   
+                    </label>
+                    <input type="text"
+                    className='form-control'
+                    value={value.productoSubTipo} 
+                    onChange={(e)=>{actualizarInput(e)}}
+                    name='productoSubTipo'>
+                    </input>
+
+                </div>
                 <div className='d-grid'>
                     <button className='btn btn-primary' type='submit'>
                        GUARDAR 

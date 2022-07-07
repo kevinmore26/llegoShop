@@ -23,3 +23,16 @@
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     color: white !important;
 }
+
+.nav-link {
+    background-color: transparent   !important;
+    color: transparent   !important;
+}
+
+.nav-link:hover {
+    background-color: transparent   !important;
+    color: transparent   !important;
+}
+.dropdownWidth{
+    width: 190px !important;
+}

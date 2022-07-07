@@ -14,6 +14,7 @@ export default function CrearProductoView(){
         productoImagen:"",
         precio:"",
         productoTipo:"",
+        productoSubTipo:"",
     });
      
     const actualizarInput = (e) =>{

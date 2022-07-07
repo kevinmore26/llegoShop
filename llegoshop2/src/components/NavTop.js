@@ -25,9 +25,10 @@ export default function NavTop() {
           backgroundColor: "#4f79c1",
           display: "flex",
           justifyContent: "center",
+          height:"68px"
         }}
       >
-        <Container style={{ margin: "0 13%" }}>
+        <Container style={{ margin: "0 8%" }}>
         <NavDropdown
                     title={
                       <div className="pull-left">
@@ -35,18 +36,35 @@ export default function NavTop() {
                           className="thumbnail-image"
                           src="https://www.samueldiosdado.com/wp-content/uploads/2017/08/Men%C3%BA-hamburguesa-herramienta-practica-o-icono-inutil.png"
                           alt="user pic"
-                          style={{width:'25px'}}
+                          style={{width:'20px'}}
                         />
                       </div>
                     }
                     bg="light"
-                    id="nav-dropdown"
+                    
                     className="prueba"
-                    menuVariant="#4F79C1"
+                     
                     icon="account_circle_outline"
-                    style={{ color: "white !important" }}
+                    style={{ color: "white !important",position:"relative",top:"8px"  }}
                   >
                     <NavDropdown.Item
+                      href="#action/3.2"
+                      id="nav-dropdown"
+                      className="dropdownWidth"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Supermercado
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                    className="dropdownWidth"
                       href="#action/3.2"
                       id="nav-dropdown"
                       style={{
@@ -55,14 +73,15 @@ export default function NavTop() {
                         margin: "0 auto",
                       }}
                     >
-                      Cliente
+                      Minimarket
                       <FontAwesomeIcon
                         icon={faUserCircle}
                         style={{ fontSize: "25px" }}
                       />
                     </NavDropdown.Item>
                     <NavDropdown.Item
-                      href="#action/3.3"
+                    className="dropdownWidth"
+                      href="#action/3.2"
                       id="nav-dropdown"
                       style={{
                         display: "flex",
@@ -70,16 +89,79 @@ export default function NavTop() {
                         margin: "0 auto",
                       }}
                     >
-                      Despachos
-                      <img src={pic} style={{ width: "25px" }} />
+                      Comida Rápida
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3" id="nav-dropdown">
-                      <Link to="administrador">Administrador</Link>
+                    <NavDropdown.Item
+                    className="dropdownWidth"
+                      href="#action/3.2"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Electro
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4" id="nav-dropdown">
-                      Registrarse
+                    <NavDropdown.Item
+                    className="dropdownWidth"
+                      href="#action/3.2"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Farmacia
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
                     </NavDropdown.Item>
+                    <NavDropdown.Item
+
+                    className="dropdownWidth"
+                      href="#action/3.2"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Mascotas
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                    className="dropdownWidth"
+                      href="#action/3.2"
+                      id="nav-dropdown"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        margin: "0 auto",
+                      }}
+                    >
+                      Bebidas
+                      <FontAwesomeIcon
+                        icon={faUserCircle}
+                        style={{ fontSize: "25px" }}
+                      />
+                    </NavDropdown.Item>
+               
+                    
                   </NavDropdown>
           <img
             className="d-block "
@@ -115,9 +197,9 @@ export default function NavTop() {
                 expand="lg"
               >
                 <Nav className="me-auto">
-                  <Nav.Link href="#home" style={{ color: "white" }}>
+                  <div   style={{ color: "white",display:"flex",alignItems:"center",marginRight:"5px" }}>
                     Mis Pedidos
-                  </Nav.Link>
+                  </div>
 
                   <NavDropdown
                     title="Iniciar Sesión"
