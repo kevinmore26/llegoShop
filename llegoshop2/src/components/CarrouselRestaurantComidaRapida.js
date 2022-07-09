@@ -53,7 +53,7 @@ export default class Responsive extends Component {
         <Container>
           <Slider {...settings}>
             <div>
-              <Link to="/productoskfc" style={{textDecoration:"none"}}>
+              <Link to="/comidarapidalist/productoskfc" style={{textDecoration:"none"}}>
                 <Card
                   style={{
                     border: "none",
