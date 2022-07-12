@@ -9,6 +9,7 @@ import ComidaRapidaListView from "./views/ComidaRapidaListView";
 import ProductosKfcView from "./views/ProductosKfcView";
 import ProductoView from "./views/ProductoView";
 import CarritoContextProvider from "./context/carritoContext";
+import CarritoView from "./views/CarritoView";
 export default function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ export default function App() {
         <Routes>
           {/* el Routes va verificar qué ruta necesitamos y que componente usar */}
           <Route exact path="/" element={<VistaPrincipal />} />
+          <Route exact path="/carrito" element={<CarritoView />} />
           <Route
             exact
             path="/comidarapidalist/productoskfc"

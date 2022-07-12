@@ -7,10 +7,10 @@ import { CarritoContext } from "../context/carritoContext";
 import NavTop from "../components/NavTop";
 
 export default function ProductoView() {
-  const [producto, setProducto] = useState([])
-  const  {anadirACarrito}   = useContext(CarritoContext)
-  const { id } = useParams()
-  
+  const [producto, setProducto] = useState([]);
+  const { anadirACarrito } = useContext(CarritoContext);
+  const { id } = useParams();
+
   const getProducto = async () => {
     try {
       let productoObtenido = await comidaRapidaKfcPorId(id);
@@ -23,16 +23,20 @@ export default function ProductoView() {
   };
   const navigate = useNavigate();
   const anadirACarritoContext = () => {
+    anadirACarrito(producto);
     const resultado = Swal.fire({
       //icon:'success',
-      title: "Desea añadir al carrito?",
+   width:"500",
+   icon: 'success',
+      title: "Tu producto se añadió al carrito",
       showConfirmButton: true,
       showDenyButton: true,
-      confirmButtonText: "Añadir al carrito",
+      cancelButtonColor: "white",
+      confirmButtonColor: "#4F79C1",
+      confirmButtonText: "Ir al carrito",
       denyButtonText: "Seguir comprando",
     }).then((resultado) => {
       if (resultado.isConfirmed) {
-        anadirACarrito(producto);
         navigate("/carrito");
       } else if (resultado.isDenied) {
         navigate("/comidarapidalist/productoskfc");

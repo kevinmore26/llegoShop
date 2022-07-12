@@ -197,17 +197,19 @@ export default function NavTop() {
                 expand="lg"
               >
                 <Nav className="me-auto">
+                  <Link to="/carrito" style={{textDecoration:"none", display: "flex",
+                      alignItems: "center",}}>
                   <div
                     style={{
                       color: "white",
-                      display: "flex",
-                      alignItems: "center",
+                     
                       marginRight: "5px",
+                       
                     }}
                   >
                     Mis Pedidos
                   </div>
-
+                  </Link>
                   <NavDropdown
                     title="Iniciar Sesión"
                     bg="light"
