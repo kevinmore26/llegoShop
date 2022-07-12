@@ -10,7 +10,7 @@ export default function ProductoView() {
   const [producto, setProducto] = useState([])
   const  {anadirACarrito}   = useContext(CarritoContext)
   const { id } = useParams()
-
+  
   const getProducto = async () => {
     try {
       let productoObtenido = await comidaRapidaKfcPorId(id);

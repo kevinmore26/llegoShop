@@ -8,6 +8,7 @@ import envios from "../assets/envios.png";
 import farmacia from "../assets/farmacia.png";
 import canasta from "../assets/canasta.png";
 import mascotas from "../assets/mascotas.png";
+import kfc from "../assets/KFC-logo.png"
 export default class Responsive extends Component {
   render() {
     var settings = {
@@ -64,9 +65,9 @@ export default class Responsive extends Component {
                 >
                   <Card.Title className="text-center">KFC</Card.Title>
                   <Card.Img
-                    src="http://assets.stickpng.com/images/58429977a6515b1e0ad75ade.png"
+                    src={kfc}
                     style={{
-                      maxWidth: "150px",
+                      maxWidth: "255px",
                       margin: "0 auto",
                       padding: "10px",
                     }}
