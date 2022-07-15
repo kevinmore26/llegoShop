@@ -11,7 +11,7 @@ export default function GroupProductsCarrito({ carrito }) {
   totalComprado = carrito.reduce((acum, item) => {
     return acum + item.cantidad;
   }, 0);
-
+   
   return (
     <Container style={{ position: "relative", top: "100px" }}>
       <div style={{ display: "flex" }}>
@@ -49,6 +49,9 @@ export default function GroupProductsCarrito({ carrito }) {
                 <p>Cantidad</p>
                 <h6>{prod.cantidad}</h6>
               </div>
+              <div>
+                {/* TO DO ELIMINAR CARRITO */}
+                </div>
               <hr></hr>
             </div>
           ))}

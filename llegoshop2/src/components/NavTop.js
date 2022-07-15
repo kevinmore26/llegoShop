@@ -7,15 +7,26 @@ import {
   FormControl,
   Form,
   Button,
+  
 } from "react-bootstrap";
 import pic from "../assets/casco-moto.png";
 import { Link } from "react-router-dom";
-
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import Badge from "@material-ui/core/Badge";
 import Logo from "../assets/logo1.png";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {CarritoContext} from "../context/carritoContext";
+import { useContext } from "react";
 import "./Footer.css";
 export default function NavTop() {
+  
+  const{carrito} = useContext(CarritoContext)
+
+  const totalCarrito = carrito.reduce((total,item)=>{
+      return total + item.cantidad
+  },0); 
+
   return (
     <div>
       <Navbar
@@ -255,7 +266,12 @@ export default function NavTop() {
                     </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Link to="/carrito" className="nav-link"></Link>
+                  <Link to="/carrito" className="nav-link">
+                      <Badge color="primary" badgeContent={totalCarrito}>
+                        
+                        <ShoppingCartIcon style={{color:"white"}}></ShoppingCartIcon>
+                      </Badge>
+                  </Link>
                 </Nav>
               </Navbar.Collapse>
             </Form>

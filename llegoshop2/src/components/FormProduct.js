@@ -77,7 +77,6 @@ export default function FormProducto ({value,manejarSubmit,actualizarInput}){
                     onChange={(e)=>{actualizarInput(e)}}
                     name='productoTipo'>
                     </input>
-
                 </div>
                 <div className='mb-3'>
                     <label>
