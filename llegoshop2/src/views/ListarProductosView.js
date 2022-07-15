@@ -27,7 +27,7 @@ export default function ListaProductosView() {
     if(miBusqueda == '' ){
       let productosObtenidos = await obtenerProductos();
 
-      setProductos(productosObtenidos.productos);
+      setProductos(productosObtenidos);
     }else{
       const productosFiltrados = await filtrarProducto(miBusqueda);
       setProductos(productosFiltrados);
@@ -39,7 +39,7 @@ export default function ListaProductosView() {
     try {
       let productosObtenidos = await obtenerProductos();
 
-      setProductos(productosObtenidos.productos);
+      setProductos(productosObtenidos);
     } catch {
       console.log("error");
     }

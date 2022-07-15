@@ -61,9 +61,10 @@ export default function GroupProductsCarrito({ carrito }) {
             width: "20%",
             border: "0.5px solid #00000026",
             padding: "30px",
+            maxHeight:"300px"
           }}
         >
-          <div style={{ textAlign: "center", fontWeight: "bold" }}>
+          <div style={{ textAlign: "center", fontWeight: "bold", color: "#4F79C1" }}>
             RESUMEN DE LA ORDEN
           </div>
           <hr></hr>
@@ -72,8 +73,8 @@ export default function GroupProductsCarrito({ carrito }) {
             <p>S/{total}</p>
           </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <h6 style={{ fontWeight: "bold" }}>TOTAL </h6>
-            <h6 style={{ fontWeight: "bold" }}>S/{total}</h6>
+            <h6 style={{ fontWeight: "bold" , color: "#4F79C1"}}>TOTAL </h6>
+            <h6 style={{ fontWeight: "bold"  }}>S/{total}</h6>
           </div>
         </div>
       </div>

@@ -5,10 +5,10 @@ const URL = `http://127.0.0.1:8000/api/listarProducto/`;
 const comidaRapidaKfc = async (busqueda = "") => {
   try {
     let { data } = await axios.get(
-      `http://127.0.0.1:8000/api/buscarProductoTipoSubTipo/?productoSubTipo=kfc`
+      `https://6104aae64b92a000171c5ca7.mockapi.io/listarProductoKfc`
     );
-    console.log(data.datos[0]);
-    return data.datos[0];
+    console.log(data);
+    return data;
   } catch {
     console.log("error");
     //si hay errores captura ese error
@@ -18,10 +18,10 @@ const comidaRapidaKfc = async (busqueda = "") => {
 const comidaRapidaKfcPorId = async (id) => {
   try {
     let { data } = await axios.get(
-      `http://127.0.0.1:8000/api/buscarProductoTipoSubTipo/?productoSubTipo=kfc&id=${id}`
+      `https://6104aae64b92a000171c5ca7.mockapi.io/listarProductoKfc/?id=${id}`
     );
-    console.log(data.datos[0][0]);
-    return data.datos[0][0];
+    console.log(data);
+    return data[0];
   } catch {
     console.log("error");
     //si hay errores captura ese error
